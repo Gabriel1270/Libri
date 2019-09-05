@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E4350"
+    tools:context=".View_ad">
+
+
+    <include layout ="@layout/menubar"
+        android:id="@+id/menu_bar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_bar">
+        <RelativeLayout
+            android:id="@+id/ad_view_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/view_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textColor="#EEEAEB"
+                android:textSize="26dp" />
+            <TextView
+                android:id="@+id/view_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_title"
+                android:text="Author"
+                android:textAlignment="center"
+                android:textColor="#EEEAEB"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_contact_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_author"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Contact Seller" />
+
+            <ImageView
+                android:id="@+id/view_image"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_below="@id/btn_contact_seller"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/view_date_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_image"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Date posted:"
+                android:textColor="#EEEAEB"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_image"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/view_date_lbl"
+                android:text="Date posted"
+                android:textColor="#EEEAEB"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_seller_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_date_lbl"
+                android:layout_alignEnd="@+id/view_date_lbl"
+                android:layout_marginTop="10dp"
+                android:text="Seller:"
+                android:textColor="#EEEAEB"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/view_date"
+                android:layout_alignTop="@+id/view_seller_lbl"
+                android:layout_toRightOf="@+id/view_date_lbl"
+                android:text="Seller"
+                android:textColor="#EEEAEB"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_price_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_seller_lbl"
+                android:layout_alignEnd="@+id/view_seller_lbl"
+                android:layout_marginTop="10dp"
+                android:text="Price:"
+                android:textColor="#EEEAEB"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/view_date"
+                android:layout_alignTop="@+id/view_price_lbl"
+                android:layout_toRightOf="@+id/view_date_lbl"
+                android:text="Price"
+                android:textColor="#EEEAEB"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_condition_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_price_lbl"
+                android:layout_alignEnd="@+id/view_price_lbl"
+                android:layout_marginTop="10dp"
+                android:text="Condition:"
+                android:textColor="#EEEAEB"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/view_date"
+                android:layout_alignTop="@+id/view_condition_lbl"
+                android:layout_toRightOf="@+id/view_date_lbl"
+                android:text="Condition"
+                android:textColor="#EEEAEB"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_status_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_condition_lbl"
+                android:layout_alignEnd="@+id/view_seller_lbl"
+                android:layout_marginTop="10dp"
+                android:text="Status:"
+                android:textColor="#EEEAEB"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/view_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/view_date"
+                android:layout_alignTop="@+id/view_status_lbl"
+                android:layout_toRightOf="@+id/view_date_lbl"
+                android:text="Status"
+                android:textColor="#EEEAEB"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/btn_add_to_cart"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_status"
+                android:layout_alignStart="@+id/Add_image_button"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#2174B1"
+                android:text="Add to Cart"
+                android:textColor="#EEEAEB" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

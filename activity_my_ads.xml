@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E4350"
+    tools:context=".MyAds">
+
+    <include layout ="@layout/menubar"
+        android:id="@+id/menu_bar" />
+
+    <TextView
+        android:id="@+id/myads_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My ads"
+        android:textColor="#EEEAEB"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/menu_bar"
+        android:layout_marginTop="80dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_myads"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/myads_label"></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Libri</string>
+
+    <string-array name="book_field">
+        <item>Title</item>
+        <item>ISBN</item>
+        <item>Author</item>
+        <item>Faculty</item>
+        <item>Seller</item>>
+    </string-array>
+
+    <string-array name="conditions">
+        <item>New</item>
+        <item>Good</item>
+        <item>Used</item>
+        <item>Needs some TLC</item>
+    </string-array>
+</resources>

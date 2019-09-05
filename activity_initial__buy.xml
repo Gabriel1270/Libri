@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E4350"
+    tools:context=".Initial_Buy">
+
+   <include layout ="@layout/menubar"
+       android:id="@+id/menu_bar" />
+
+    <TextView
+        android:id="@+id/search_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_bar"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:text="Search:"
+        android:textColor="#EEEAEB"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/search_parameters"
+        android:layout_width="224dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@+id/search_textview"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-16dp"
+        android:layout_toRightOf="@+id/search_textview"
+        android:textColor="#EEEAEB"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/search_by_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_textview"
+        android:layout_alignStart="@+id/search_textview"
+
+        android:layout_marginTop="20dp"
+        android:text="By:"
+        android:textColor="#EEEAEB"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/search_by_button1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_textview"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/search_by_textview"
+        android:backgroundTint="#EEEAEB"/>
+
+    <ImageButton
+        android:id="@+id/search_button"
+        android:layout_width="56dp"
+        android:layout_height="53dp"
+        android:layout_alignTop="@+id/search_by_textview"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toRightOf="@+id/search_by_button1"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <TextView
+        android:id="@+id/hominibus_label"
+        android:layout_width="237dp"
+        android:layout_height="102dp"
+        android:layout_below="@+id/search_button"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="119dp"
+        android:text="Developed by Hominibus Software Development"
+        android:textAlignment="center"
+        android:textColor="#EEEAEB"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>

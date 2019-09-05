@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E4350"
+    tools:context=".Main_Buy">
+
+    <include layout ="@layout/menubar"
+        android:id="@+id/menu_bar" />
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/menu_bar"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/sort_btn"
+            android:layout_width="55dp"
+            android:layout_height="53dp"
+            android:background="#3E4350"
+            android:src="@android:drawable/ic_menu_sort_alphabetically"
+            android:onClick="showSortPopUp"/>
+
+        <TextView
+            android:id="@+id/search_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menu_bar"
+            android:layout_marginStart="2dp"
+            android:text="Search:"
+            android:textColor="#EEEAEB"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/search_parameters2"
+            android:layout_width="65dp"
+            android:layout_height="56dp"
+            android:layout_alignTop="@+id/search_textview"
+            android:layout_toRightOf="@+id/search_textview"
+            android:textColor="#EEEAEB"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/search_by_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_textview"
+            android:text="By:"
+            android:textColor="#EEEAEB"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/search_by_button2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/search_bar"
+            android:layout_marginEnd="2dp"
+            android:layout_toRightOf="@+id/search_by_textview"
+            android:backgroundTint="#EEEAEB" />
+
+        <ImageButton
+            android:id="@+id/search_button2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/search_by_textview"
+            android:layout_toRightOf="@+id/search_by_button"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar"
+        android:layout_marginTop="20dp">
+
+        <ProgressBar
+            android:id="@+id/progress_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_ads"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>

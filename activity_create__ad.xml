@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E4350"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarSize="10dp"
+    tools:context=".Create_Ad"
+    >
+
+    <include layout ="@layout/menubar"
+        android:id="@+id/menu_bar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_bar">
+        <RelativeLayout
+            android:id="@+id/ad_create_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/create_an_ad_textview"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal"
+        android:text="Create an ad"
+        android:textColor="#EEEAEB"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/ISBN_label"
+        android:layout_width="84dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/create_an_ad_textview"
+        android:layout_alignTop="@+id/ISBN"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:text="ISBN:"
+        android:textColor="#EEEAEB" />
+
+            <EditText
+                android:id="@+id/ISBN"
+                android:layout_width="212dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/create_an_ad_textview"
+                android:layout_toRightOf="@+id/ISBN_label"
+                android:textColor="#EEEAEB" />
+
+    <TextView
+        android:id="@+id/Title_label"
+        android:layout_width="84dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ISBN_label"
+        android:layout_alignTop="@+id/Title"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:text="Title:"
+        android:textColor="#EEEAEB" />
+
+    <EditText
+        android:id="@+id/Title"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ISBN"
+        android:layout_toRightOf="@+id/ISBN_label"
+        android:textColor="#EEEAEB" />
+
+    <TextView
+        android:id="@+id/Author_label"
+        android:layout_width="84dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ISBN_label"
+        android:layout_alignTop="@+id/Author"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:text="Author:"
+        android:textColor="#EEEAEB" />
+
+    <EditText
+        android:id="@+id/Author"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_toRightOf="@+id/ISBN_label"
+        android:textColor="#EEEAEB" />
+
+    <TextView
+        android:id="@+id/YEar_label"
+        android:layout_width="84dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ISBN_label"
+        android:layout_alignTop="@+id/Year"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:text="Year:"
+        android:textColor="#EEEAEB" />
+
+    <EditText
+        android:id="@+id/Year"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Author"
+        android:layout_toRightOf="@+id/ISBN_label"
+        android:textColor="#EEEAEB" />
+
+    <TextView
+        android:id="@+id/Faculty_label"
+        android:layout_width="84dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ISBN_label"
+        android:layout_alignTop="@+id/Faculty"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:text="Faculty:"
+        android:textColor="#EEEAEB" />
+
+    <EditText
+        android:id="@+id/Faculty"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Publisher"
+        android:layout_toRightOf="@+id/ISBN_label"
+        android:textColor="#EEEAEB" />
+
+    <TextView
+        android:id="@+id/Condition_label"
+        android:layout_width="84dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ISBN_label"
+        android:layout_alignTop="@+id/Condition"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:text="Condition:"
+        android:textColor="#EEEAEB" />
+
+    <Spinner
+        android:id="@+id/Condition"
+        android:layout_width="212dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/Faculty"
+        android:layout_toRightOf="@+id/ISBN_label"
+        android:backgroundTint="#EEEAEB" />
+
+    <TextView
+        android:id="@+id/Price_label"
+        android:layout_width="84dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/ISBN_label"
+        android:layout_alignTop="@+id/Price"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:text="Price:"
+        android:textColor="#EEEAEB" />
+
+    <EditText
+        android:id="@+id/Price"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Condition"
+        android:layout_toRightOf="@+id/ISBN_label"
+        android:textColor="#EEEAEB" />
+
+    <TextView
+        android:id="@+id/Publisher_label"
+        android:layout_width="84dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/Year"
+        android:layout_alignTop="@+id/Publisher"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:text="Publisher:"
+        android:textColor="#EEEAEB" />
+
+    <EditText
+        android:id="@+id/Publisher"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Year"
+        android:layout_toRightOf="@+id/ISBN_label"
+        android:textColor="#EEEAEB" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Price"
+        android:layout_above="@+id/image"
+
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="238dp"
+        android:visibility="visible"
+        />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="246dp"
+        android:layout_height="217dp"
+        android:layout_below="@+id/Price"
+        android:layout_marginStart="-108dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/ISBN_label" />
+
+    <Button
+        android:id="@+id/Add_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Price"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/image"
+        android:text="Add Image" />
+
+    <Button
+        android:id="@+id/post_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Add_image_button"
+        android:layout_alignStart="@+id/Add_image_button"
+        android:layout_marginTop="20dp"
+        android:background="#2174B1"
+        android:text="Post"
+        android:textColor="#EEEAEB" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
